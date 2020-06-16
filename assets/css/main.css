@@ -2920,7 +2920,7 @@
 			-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			content: '';
-			background-image: url(../../images/sabrina-wendl-lKo4s6jvZxU-unsplash.jpg);
+			background-image: url(../../images/bg-image_crp.jpeg);
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -2933,7 +2933,8 @@
 			width: 100%;
 			z-index: -1;
 			visibility: visible;
-			opacity: 1;
+			opacity: 0.8;
+			box-shadow: 0 0 130px 30px black inset;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -2962,7 +2963,7 @@
 			#header > .logo a {
 				font-size: 4rem;
 				font-weight: 700;
-				color: black;
+				color: white;
 				text-decoration: none;
 				line-height: 1rem;
 			}
