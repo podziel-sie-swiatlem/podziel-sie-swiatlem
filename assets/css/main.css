@@ -2484,6 +2484,25 @@
 				ul.icons li .icon:before {
 					font-size: 2rem;
 				}
+		
+		ul.logos {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.logos li { 
+				display: inline-block;
+				padding: 0 1rem 0 0;
+			}
+
+				ul.logos li:last-child {
+					padding-right: 0;
+				}
+
+				ul.logos li .icon:before {
+					width: 10%;
+				} 
 
 		ul.actions {
 			cursor: default;
@@ -3176,3 +3195,31 @@
 			}
 
 		}
+
+		.image-op {
+			opacity: 1;
+			/* display: block; */
+			/* width: 100%; */
+			/* height: auto; */
+			transition: .5s ease;
+			backface-visibility: hidden;
+		  }
+		  
+		  .middle-op {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		  }
+		  
+		  .container-op:hover .image-op {
+			opacity: 0.3;
+		  }
+		  
+		  .container-op:hover .middle-op {
+			opacity: 1;
+		  }
